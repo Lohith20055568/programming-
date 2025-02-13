@@ -108,8 +108,8 @@
       }
 
       function doIt7() {
-          let basket = JSON.parse(document.getElementById("basket").value);
-          let prices = JSON.parse(document.getElementById("prices").value);
+          let basket = parseFloat(document.getElementById("basket").value);
+          let prices = parseFloat(document.getElementById("prices").value);
           let total = f7(basket, prices);
           alert("The total cost is: $" + total);
       }
@@ -156,8 +156,8 @@
 
   <!-- Exercise 7: Calculate Basket Cost -->
   <p>Exercise 7: Calculate Basket Cost</p>
-  <textarea id="basket" placeholder="Enter basket in JSON format"></textarea><br>
-  <textarea id="prices" placeholder="Enter prices in JSON format"></textarea><br>
+  <textarea id="basket" ></textarea><br>
+  <textarea id="prices" ></textarea><br>
   <button onclick="doIt7()">Calculate Cost</button>
 </body>
 </html>
